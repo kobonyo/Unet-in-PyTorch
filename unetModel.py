@@ -4,10 +4,10 @@ import torch.nn as nn
 # double convolution
 def d_convd(in_channel, out_channel):
 	double_conv_layer = nn.Sequential(
-	                 nn.Conv2d(in_channel, out_channel,kernel_size=3),
-                     nn.ReLU(inplace=True),
-                     nn.Conv2d(out_channel, out_channel,kernel_size=3),
-                     nn.ReLU(inplace=True)
+	                    nn.Conv2d(in_channel, out_channel,kernel_size=3),
+                        nn.ReLU(inplace=True),
+                        nn.Conv2d(out_channel, out_channel,kernel_size=3),
+                        nn.ReLU(inplace=True)
 		)
 	return double_conv_layer
 
