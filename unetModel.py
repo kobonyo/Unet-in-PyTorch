@@ -92,4 +92,5 @@ class Unet(nn.Module):
 if __name__ == "__main__":
 	image = torch.rand((1,1,572,572))
 	model = Unet()
-	out = model(image).shape
+	out = model(image)
+	print(out.shape)
